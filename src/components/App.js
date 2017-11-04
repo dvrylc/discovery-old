@@ -1,11 +1,20 @@
 // External imports
 import React from 'react';
+import { Route } from 'react-router-dom';
+
+// Internal imports
+import Header from './Header';
+import ArticleList from './ArticleList';
 
 // Component
 class App extends React.Component {
   render() {
     return (
-      <h1>Discovery</h1>
+      <div className="container">
+        <Header />
+
+        <Route path="/" component={ ArticleList } />
+      </div>
     );
   }
 }

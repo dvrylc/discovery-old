@@ -2,10 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class Nav extends React.Component {
+class Header extends React.Component {
   render() {
     return (
-      <nav>
+      <header>
         <Link to="/">
           <h1>Discovery</h1>
         </Link>
@@ -13,9 +13,9 @@ class Nav extends React.Component {
         <p>A cutting-edge Hacker News reader</p>
 
         <Link to="/about">?</Link>
-      </nav>
+      </header>
     );
   }
 }
 
-export default Nav;
+export default Header;

@@ -22,22 +22,26 @@ a:hover {
   color: #5094b0;
 }
 
-nav {
-  padding: 10px;
+header {
+  padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-nav h1 {
+header h1 {
   display: inline-block;
   color: #222;
   font-size: 1em;
   font-weight: 500;
   margin: 0 0.5em 0 0;
 }
-nav p {
+header p {
   display: inline-block;
   color: #ccc;
   margin: 0;
 }
-nav a:last-child {
+header a:last-child {
   float: right;
+}
+
+.container {
+  padding: 10px;
 }
