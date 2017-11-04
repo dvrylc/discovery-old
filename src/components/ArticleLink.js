@@ -7,7 +7,9 @@ class ArticleLink extends React.Component {
       <article>
         <span>{this.props.article.user} | {this.props.article.time_ago}</span>
 
-        <h1>{this.props.article.title}</h1>
+        <h1>
+          <a href={this.props.article.url}>{this.props.article.title}</a>
+        </h1>
 
         <span>
           <i className="fa fa-caret-up" aria-hidden="true"></i>  {this.props.article.points} <i className="fa fa-commenting-o" aria-hidden="true"></i> {this.props.article.comments_count}
