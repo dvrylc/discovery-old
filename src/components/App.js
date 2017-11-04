@@ -10,7 +10,7 @@ import ArticleList from './ArticleList';
 class App extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="app">
         <Header />
 
         <Route path="/" component={ ArticleList } />

@@ -6,11 +6,9 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <Link to="/">
-          <h1>Discovery</h1>
-        </Link>
-
-        <p>A cutting-edge Hacker News reader</p>
+        <h1>
+          <Link to="/">Discovery</Link>
+        </h1>
 
         <Link to="/about">?</Link>
       </header>

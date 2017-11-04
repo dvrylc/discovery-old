@@ -3,6 +3,7 @@ import React from 'react';
 
 // Internal imports
 import api from '../utilities/api';
+import ArticleLink from './ArticleLink';
 
 class ArticleList extends React.Component {
   // Constructor
@@ -17,7 +18,7 @@ class ArticleList extends React.Component {
 
   // Lifecycle
   componentDidMount() {
-    // Fetch articles
+    // Fetch articles then update state
     api.fetchArticles()
       .then(raw => raw.json())
       .then(res => {
@@ -31,8 +32,19 @@ class ArticleList extends React.Component {
   }
 
   render() {
+    // If articles are not loaded yet
+    if (this.state.articles.length === 0) {
+      return (
+        <main>Loading...</main>
+      );
+    }
+
+    const articleLinkList = this.state.articles.map((article, index) => {
+      return <ArticleLink article={article} key={index} />
+    });
+
     return (
-      <div>articles</div>
+      <main>{articleLinkList}</main>
     );
   }
 }

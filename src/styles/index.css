@@ -11,37 +11,53 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 a {
-  color: #06678F;
+  color: #333;
   text-decoration: none;
 }
 a:hover {
-  color: #5094b0;
+  color: #999;
 }
 
 header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ffa366;
 }
 header h1 {
   display: inline-block;
-  color: #222;
-  font-size: 1em;
+  font-size: inherit;
   font-weight: 500;
-  margin: 0 0.5em 0 0;
-}
-header p {
-  display: inline-block;
-  color: #ccc;
   margin: 0;
+}
+header a {
+  color: #ff6600;
+}
+header a:hover {
+  color: #ffa366;
 }
 header a:last-child {
   float: right;
 }
 
-.container {
-  padding: 10px;
+.app {
+  padding: 10px 20px;
+}
+
+article {
+  padding: 5px 0;
+  border-bottom: 1px solid #ffa366;
+}
+article span {
+  font-size: 0.8em;
+  color: #999;
+}
+article h1 {
+  font-size: inherit;
+  font-weight: 500;
+  margin: 0;
+}
+article i:last-child {
+  margin-left: 5px;
 }
