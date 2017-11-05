@@ -10,7 +10,7 @@ body {
   color: #1A1A1A;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.85em;
   line-height: 1.4;
 }
 
@@ -27,7 +27,7 @@ header {
 }
 header h1 {
   display: inline-block;
-  font-size: inherit;
+  font-size: 1em;
   font-weight: 500;
   margin: 0;
 }
@@ -50,14 +50,20 @@ article {
   border-bottom: 1px solid #ffa366;
 }
 article span {
-  font-size: 0.8em;
   color: #B3B3B3;
 }
 article h1 {
-  font-size: inherit;
+  font-size: 1em;
   font-weight: 500;
   margin: 0;
 }
 article i:last-child {
   margin-left: 5px;
+}
+
+.item .comment {
+  border-bottom: 1px solid #B3B3B3;
+}
+.item .comment p {
+  margin: 5px 0;
 }
