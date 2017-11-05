@@ -7,7 +7,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
 
-  color: #222;
+  color: #1A1A1A;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -15,15 +15,15 @@ body {
 }
 
 a {
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 a:hover {
-  color: #999;
+  color: #4D4D4D;
 }
 
 header {
-  border-bottom: 1px solid #ffa366;
+  border-bottom: 1px solid #FF801A;
 }
 header h1 {
   display: inline-block;
@@ -35,14 +35,14 @@ header a {
   color: #ff6600;
 }
 header a:hover {
-  color: #ffa366;
+  color: #FF801A;
 }
 header a:last-child {
   float: right;
 }
 
 .app {
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 article {
@@ -51,7 +51,7 @@ article {
 }
 article span {
   font-size: 0.8em;
-  color: #999;
+  color: #B3B3B3;
 }
 article h1 {
   font-size: inherit;
